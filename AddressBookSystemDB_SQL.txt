@@ -15,3 +15,7 @@ Insert into addressBook (firstname,lastname,address,city,state,zip,phone,email) 
 ('Carl','Pais','Whitefield','Karnataka','Bengaluru','671326','8220584553','cvp@aol.com' );
 
 select * from addressBook;
+
+-- UC4: Edit Contact by name
+update addressBook set phone = '9049480396' where firstname = 'Vighnesh';
+select * from addressBook;
