@@ -29,3 +29,8 @@ select * from addressBook where city = 'Nagpur' || state = 'Maharashtra';
 
 -- UC7: size/count of address book by City and State
 select count(*) from addressBook where state = 'Maharashtra' && city='Pune';
+
+-- UC8: Retrieve entries sorted alphabetically by Person’s name for a given city
+Insert into addressBook (firstname,lastname,address,city,state,zip,phone,email) values ('Megha','Bilgi','HDFC Colony','Pune','Maharashtra','411019',
+'9665189552','mjb@gmail.com'); 
+select * from addressBook where city = 'Pune' order by firstname;
