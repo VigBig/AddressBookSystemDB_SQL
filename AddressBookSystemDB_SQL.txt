@@ -19,3 +19,10 @@ select * from addressBook;
 -- UC4: Edit Contact by name
 update addressBook set phone = '9049480396' where firstname = 'Vighnesh';
 select * from addressBook;
+
+-- UC5: Delete Contact by name
+delete from addressBook where firstname = 'Carl';
+select * from addressBook;
+
+-- UC6: Retrieve Person belonging to a City or State
+select * from addressBook where city = 'Nagpur' || state = 'Maharashtra';
