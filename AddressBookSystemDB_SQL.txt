@@ -7,3 +7,11 @@ use AddressbookService;
 -- UC2: create a AddressBook Table with attributes
 create table addressBook (firstname varchar(50),lastname varchar(50),address varchar(50),
 city varchar(50),state varchar(50),zip varchar(6),phone varchar(12),email varchar(50));
+
+-- UC3: Insert new contact
+Insert into addressBook (firstname,lastname,address,city,state,zip,phone,email) values ('Vighnesh','Bilgi','HDFC Colony','Pune','Maharashtra','411019',
+'9789281907','vhb@gmail.com'), 
+('Anoop','Aparajit','Jaitala','Nagpur','Maharashtra','44036','8110020670','aa@yahoo.com'),
+('Carl','Pais','Whitefield','Karnataka','Bengaluru','671326','8220584553','cvp@aol.com' );
+
+select * from addressBook;
