@@ -59,3 +59,8 @@ select * from addressBook where booktype = 'Friend';
 
 -- UC10: Count number of persons by type
 select count(*) from addressBook where booktype='Family';
+
+-- UC11: Add person to both Friend and Family
+Insert into addressBook (firstname,lastname,address,city,state,zip,phone,email,bookname,booktype) values ('Trishul','Prabakahr','USA','Austin','Texas','78751','5125228222','tp@gmail.com','Book2','Friend'),
+('Harish','Bilgi','UAE','Dubai','Dubai','00000','558018701','hb@aol.com','Book1','Family');
+select * from addressBook;
