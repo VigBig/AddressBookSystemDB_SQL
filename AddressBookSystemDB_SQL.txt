@@ -26,3 +26,6 @@ select * from addressBook;
 
 -- UC6: Retrieve Person belonging to a City or State
 select * from addressBook where city = 'Nagpur' || state = 'Maharashtra';
+
+-- UC7: size/count of address book by City and State
+select count(*) from addressBook where state = 'Maharashtra' && city='Pune';
