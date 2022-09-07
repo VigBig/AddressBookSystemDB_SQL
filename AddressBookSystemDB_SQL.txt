@@ -1,1 +1,9 @@
 -- Welcome to Address Book Service DB
+-- UC1: Create AddressBookService Database
+create database AddressbookService;
+show databases;
+use AddressbookService;
+
+-- UC2: create a AddressBook Table with attributes
+create table addressBook (firstname varchar(50),lastname varchar(50),address varchar(50),
+city varchar(50),state varchar(50),zip varchar(6),phone varchar(12),email varchar(50));
