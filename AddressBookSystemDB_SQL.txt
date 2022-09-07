@@ -56,3 +56,6 @@ update addressBook set bookname='Book1',booktype='Family' where firstname = 'Meg
 
 select * from addressBook where bookname = 'Book1';
 select * from addressBook where booktype = 'Friend';
+
+-- UC10: Count number of persons by type
+select count(*) from addressBook where booktype='Family';
